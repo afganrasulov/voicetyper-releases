@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>VoiceTyper by iLoveMac</title>
+<style>
+  :root { color-scheme: light dark; --ink:#1B1C22; --ink2:#6B6C76; --bg:#F7F7FB;
+          --surface:#FFFFFF; --accent:#5C4FF5; --accent-ink:#4135C9; --hairline:#E6E6EE; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#EAEAF2; --ink2:#8E8F9A; --bg:#141520; --surface:#1F2028;
+            --accent:#5C4FF5; --accent-ink:#9B92FF; --hairline:#2C2D38; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:16px/1.6 -apple-system, system-ui, sans-serif;
+         display:flex; align-items:center; justify-content:center; min-height:100vh; padding:24px; }
+  main { max-width:560px; width:100%; background:var(--surface); border:1px solid var(--hairline);
+         border-radius:24px; padding:40px 36px; text-align:center; }
+  h1 { font-size:30px; margin:0 0 6px; letter-spacing:-.02em; }
+  .tag { color:var(--ink2); margin:0 0 28px; font-size:17px; }
+  .cta { display:inline-block; background:var(--accent); color:#fff; text-decoration:none;
+         padding:14px 32px; border-radius:999px; font-weight:600; font-size:17px; }
+  .req { color:var(--ink2); font-size:13px; margin-top:14px; }
+  ul { text-align:left; margin:32px 0 0; padding:0; list-style:none;
+       border-top:1px solid var(--hairline); }
+  li { padding:14px 0; border-bottom:1px solid var(--hairline); font-size:15px; }
+  li b { display:block; font-size:15px; }
+  li span { color:var(--ink2); font-size:14px; }
+  footer { margin-top:28px; font-size:13px; color:var(--ink2); }
+  footer a { color:var(--accent-ink); }
+</style></head>
+<body><main>
+  <h1>VoiceTyper</h1>
+  <p class="tag">Hold a key. Speak. Your words appear wherever you're working.</p>
+  <a class="cta" href="../../releases/latest">Download for Mac</a>
+  <p class="req">Requires macOS 14 or later · Apple Silicon</p>
+  <ul>
+    <li><b>100% on-device</b><span>Your voice never leaves your Mac. No account, no cloud, no telemetry.</span></li>
+    <li><b>Works everywhere</b><span>Slack, Mail, your editor, any text field. No per-app setup.</span></li>
+    <li><b>90+ languages</b><span>Powered by Whisper, running locally on the Neural Engine.</span></li>
+  </ul>
+  <footer>Updates are delivered automatically via <a href="https://sparkle-project.org">Sparkle</a>.</footer>
+</main></body></html>
