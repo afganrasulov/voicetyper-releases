@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 13px/1.55 -apple-system, system-ui, sans-serif;
+    margin: 0; padding: 12px 14px;
+    color: #1B1C22; background: transparent;
+  }
+  h2 { font-size: 15px; margin: 0 0 10px; }
+  h3 { font-size: 12px; margin: 12px 0 4px; text-transform: uppercase;
+        letter-spacing: .04em; opacity: .65; font-weight: 600; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin: 3px 0; }
+  a  { color: #4135C9; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #EAEAF2; }
+    a    { color: #9B92FF; }
+  }
+</style></head>
+<body>
+<h2>Version 1.1.0</h2>
+<h3>Added</h3>
+<ul>
+  <li>Automatic updates. VoiceTyper now checks once a day for a new version and can install it itself — no more re-downloading by hand.</li>
+  <li>A &quot;Check for Updates&quot; control in Settings ▸ Support and in the VoiceTyper menu.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+  <li>VoiceTyper is now distributed as a signed, notarized disk image: download, drag to Applications, open. No security warnings, no right-click workaround.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+  <li>The microphone reconnection retry could outlive the recorder that scheduled it.</li>
+  <li>Several settings labels still used developer jargon instead of plain language.</li>
+</ul>
+</body></html>

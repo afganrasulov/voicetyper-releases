@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+  <channel>
+    <title>VoiceTyper by iLoveMac</title>
+    <description>Software updates for VoiceTyper by iLoveMac.</description>
+    <language>en</language>
+    <item>
+      <title>Version 1.1.0</title>
+      <pubDate>Fri, 04 Sep 2026 10:42:27 +0000</pubDate>
+      <sparkle:version>14</sparkle:version>
+      <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <sparkle:releaseNotesLink>https://updates.rasulov.net/release-notes/1.1.0.html</sparkle:releaseNotesLink>
+      <enclosure url="https://github.com/afganrasulov/voicetyper-releases/releases/download/v1.1.0/VoiceTyper-1.1.0.zip" length="3079968" type="application/octet-stream" sparkle:edSignature="T1HvYzuzns0D7Lmi71dvM9EMuE0y62HqondGfRA43Dq/qLyg3cbC6uQR2FM3UTRi1Z/LOp+GFTQky0oUaEOSBQ==" />
+    </item>
+  </channel>
+</rss>
