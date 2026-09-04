@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 13px/1.55 -apple-system, system-ui, sans-serif;
+    margin: 0; padding: 12px 14px;
+    color: #1B1C22; background: transparent;
+  }
+  h2 { font-size: 15px; margin: 0 0 10px; }
+  h3 { font-size: 12px; margin: 12px 0 4px; text-transform: uppercase;
+        letter-spacing: .04em; opacity: .65; font-weight: 600; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin: 3px 0; }
+  a  { color: #4135C9; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #EAEAF2; }
+    a    { color: #9B92FF; }
+  }
+</style></head>
+<body>
+<h2>Version 1.1.1</h2>
+<h3>Fixed</h3>
+<ul>
+  <li>Publishing a release could fail with an unhelpful authentication error on machines that sign in with the GitHub CLI rather than a token.</li>
+  <li>Release scratch files were written into the project folder instead of the build output directory.</li>
+</ul>
+</body></html>
