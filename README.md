@@ -3,7 +3,7 @@
 Distribution artifacts and the Sparkle update feed for **VoiceTyper by iLoveMac**, a macOS
 push-to-talk voice-typing app that transcribes 100% on-device.
 
-**Download:** https://updates.rasulov.net · or the [Releases](../../releases) tab.
+**Download:** https://updates.rasulov.net · or the [Releases](https://github.com/afganrasulov/voicetyper-releases/releases) tab.
 
 This repository contains no source code — only the published installer, the update feed, and
 release notes. The application source is private.
