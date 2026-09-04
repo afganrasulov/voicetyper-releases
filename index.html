@@ -32,13 +32,31 @@
 <body><main>
   <h1>VoiceTyper</h1>
   <p class="tag">Hold a key. Speak. Your words appear wherever you're working.</p>
-  <a class="cta" href="https://github.com/afganrasulov/voicetyper-releases/releases/latest">Download for Mac</a>
-  <p class="req" style="margin-top:10px"><a href="https://github.com/afganrasulov/voicetyper-releases/releases" style="color:inherit">All versions</a></p>
-  <p class="req">Requires macOS 14 or later · Apple Silicon</p>
+  <!-- /releases/latest/download/<name> is GitHub's permalink to that asset in the newest
+       non-prerelease release. It only works because every release also ships a version-less
+       VoiceTyper.dmg (see tools/release.sh) — a versioned filename could never be a permalink. -->
+  <a class="cta" id="dl" href="https://github.com/afganrasulov/voicetyper-releases/releases/latest/download/VoiceTyper.dmg">Download for Mac</a>
+  <p class="req" id="meta">Requires macOS 14 or later · Apple Silicon</p>
+  <p class="req"><a href="https://github.com/afganrasulov/voicetyper-releases/releases" style="color:inherit">All versions</a></p>
   <ul>
     <li><b>100% on-device</b><span>Your voice never leaves your Mac. No account, no cloud, no telemetry.</span></li>
     <li><b>Works everywhere</b><span>Slack, Mail, your editor, any text field. No per-app setup.</span></li>
     <li><b>90+ languages</b><span>Powered by Whisper, running locally on the Neural Engine.</span></li>
   </ul>
   <footer>Updates are delivered automatically via <a href="https://sparkle-project.org">Sparkle</a>.</footer>
-</main></body></html>
+</main>
+<script>
+  (async () => {
+    try {
+      const r = await fetch('https://api.github.com/repos/afganrasulov/voicetyper-releases/releases/latest');
+      if (!r.ok) return;                       // rate-limited, or no stable release yet
+      const rel = await r.json();
+      const dmg = (rel.assets || []).find(a => a.name === 'VoiceTyper.dmg');
+      if (!dmg) return;
+      const mb = (dmg.size / 1048576).toFixed(1);
+      document.getElementById('meta').textContent =
+        `Version ${rel.tag_name.replace(/^v/, '')} · ${mb} MB · macOS 14+ · Apple Silicon`;
+    } catch (_) { /* leave the static text in place */ }
+  })();
+</script>
+</body></html>
